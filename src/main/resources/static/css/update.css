@@ -1,0 +1,56 @@
+button{
+    width : 85px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding : 5px;
+}
+.savetitle{
+width : 600px;
+}
+.savecontent{
+width : 600px;
+height : 300px;
+}
+#saveform{
+position: absolute; left: 50%; transform: translateX(-50%);
+}
+#updateform{
+position: absolute; left: 50%; transform: translateX(-50%);
+}
+#writebtn{
+background-color : black;
+color : white;
+}
+
+
+.fileinput input{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.fileinput label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.fileinput input[type="file"] { /*파일 적용 삭제*/
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!-- 사용자 css -->
+<link rel="stylesheet" href="/css/member/info.css">
+</head>
+<body>
+
+    <div th:replace="header.html::header"></div>
+
+    <h3 id="headtitle">마이페이지</h3>
+    <div class="container">
+        <div id="nicknamebox"> <!-- 닉네임 박스 -->
+            <div class="row">
+                <div class="col-md-7" id="nickname">닉네임구역~~</div>
+                <div class="col-md-5" id="btnbox"> <!-- 버튼 구역 -->
+                    <a href="/member/update"><button type="button" id="updatebtn">정보 수정</button></a><br>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="deletebtn">회원 탈퇴</button>
+                    <!--<button type="button" onclick="memberdelete()" id="deletebtn">회원 탈퇴</button>-->
+                </div>
+            </div>
+            <div id="guidement">
+                <div>솔직한 이야기를 나누고, 많은 공감(좋아요)을 얻어 <br>
+                    <span id="emphasis">Best Blinder</span> 가 되어보는 건 어떠세요?</div>
+            </div>
+        </div>
+        <div id="menubar">
+            <div id="myboard">
+                <a href="/member/myboard">내가 작성한 글
+                    <span class="space"> > </span>
+                </a>
+            </div>
+            <div id="pwupdate">
+                <a href="/member/pwupdate">비밀번호 변경
+                    <span class="space"> > </span>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 회원 탈퇴 모달 버튼 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">회원탈퇴 알림창</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    회원 탈퇴를 정말로 하시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                    <button id="mdelete" type="button" class="btn btn-primary" onclick="memberdelete()">탈퇴</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="footer.html::footer"></div>
+
+<!-- 사용자정의 js -->
+<script src="/js/member/info.js"></script>
+
+</body>
+</html>

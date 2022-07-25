@@ -1,0 +1,28 @@
+.writebtn{ background-color : #a3cca2;
+border : none; padding-left : 15px; }
+
+.movebtn{    width : 85px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding : 5px;}
+
+#searchclass{    margin-left : 300px;}
+
+.searchCa{    border-radius : 5px;
+    padding : 5px;}
+
+.searchinput{border-radius : 15px;
+
+color : grey;width : 400px;
+padding-left : 20px;}
+
+.searchbtn{    background-color : white;
+    border : none;}
+
+.pagebtnbox{ color : black;}
+
+.categorybox{    text-align : center;
+    font-size : 13px;}
+
+.bi{padding-right : 5px;}

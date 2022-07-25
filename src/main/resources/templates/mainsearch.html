@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!-- 사용자 css -->
+<link rel="stylesheet" href="/css/mainsearch.css">
+</head>
+<body>
+    <div th:replace="header.html::header"></div>
+
+    <div class="container" id="totalbox">
+        <input th:value="${input}" style="display: none;" id="value1">
+
+        <div id="comtitle" style="display: none">회사</div>
+        <div id="companysearchbox" style="display: none"> <!-- 회사 검색 결과 부분 -->
+
+            <div id="companyboard">
+                <div class="row">
+                    <div class="col-md-1" id="logo"> <!-- 회사 로고 -->
+
+                    </div>
+                    <div class="col-md-11" id="companybox"> <!-- 회사 별점/리뷰 -->
+                        <div class="row" id="companytotal"> <!-- 회사명/별점 -->
+                            <div class="col-md-1" id="comname">회사이름</div>
+                            <div class="col-md-4" id="totalstar">별점</div>
+                        </div>
+                        <div class="row" id="tab"> <!-- 탭 메뉴 -->
+                            <a th:href="@{/review/company/{param1}(param1=${input})}">소개</a>
+                            <a th:href="@{/review/companyreview/{param1}(param1=${input})}">리뷰</a>
+                            <a th:href="@{/review/companyboard/{param1}(param1=${input})}">게시글</a>
+<!--
+                            <a th:href="@{/review/companyrecruit/{param1}(param1=${input})}" onclick="recruit()">채용</a>
+-->
+                        </div>
+                        <div> <!-- 회사 평가 -->
+                            <div style="border:1px solid #dfe1e4; padding:14px 25px; margin-top:20px; border-radius: 5px;" id="comevaluation">
+                                <img src="/img/review-write!.png"><span style="font-weight: bold;"><span style="font-weight: bold;" th:text="${input}"></span>은(는) 일해 보고 싶은 회사인가요?</span>
+                                <button id="thumbupbtn"><img src="/img/review-writethumbup.png"></a></button>
+                                <button id="thumbdownbtn"><img src="/img/review-writethumbdown.png"></a></button>
+                            </div>
+                        </div>
+                        <div id="popularreview"> <!-- 인기 리뷰 -->
+                            <div class="popular">
+                                <div id="reviewtotal"></div>
+                                <div class="star">
+                                    <span id="1-stars-total" name="gtotal" value="1"></span>
+                                    <label for="1-stars-total" class="star" id="star1">&#9733;</label>
+                                    <span id="2-stars-total" name="gtotal" value="2"></span>
+                                    <label for="2-stars-total" class="star" id="star2">&#9733;</label>
+                                    <span id="3-stars-total" name="gtotal" value="3"></span>
+                                    <label for="3-stars-total" class="star" id="star3">&#9733;</label>
+                                    <span id="4-stars-total" name="gtotal" value="4"></span>
+                                    <label for="4-stars-total" class="star" id="star4">&#9733;</label>
+                                    <span id="5-star-total" name="gtotal" value="5"></span>
+                                    <label for="5-star-total" class="star" id="star5">&#9733;</label>
+                                </div>
+                            </div>
+                            <div id="eoccupational_group"></div>
+                            <div id="oneline"></div>
+                            <div id="cons"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div> <!-- 게시판 제목/내용 검색 결과 부분 -->
+            <div id="boardtitle">게시판</div>
+            <div id="boardsearchlist">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div th:replace="footer.html::footer"></div>
+
+<!-- 사용자정의 js -->
+<script src="/js/mainsearch.js"></script>
+</body>
+</html>

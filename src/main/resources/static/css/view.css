@@ -1,0 +1,201 @@
+
+
+#viewbox{
+    margin: 20px;
+}
+
+.view_category{
+    font-size: 14px;
+    color : darkblue;
+}
+
+div{margin-top:10px;}
+
+#viewbox button{
+    font-size: 14px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-right : 15px;
+    text-decoration: none;
+}
+
+.view_company{
+    font-size: 12px;
+    color: darkblue;
+}
+
+.bi{
+padding-right : 5px;
+}
+
+hr{
+width: 100%;
+margin : 20px;
+}
+
+#view_info{
+font-size : 14px; color : grey;
+}
+#view_info2{
+font-size: 16px;
+}
+
+.view_content{margin: 30px;}
+
+.replywrite{width:100%;}
+
+.replywritebtn{
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding : 5px;
+    font-weight: bold;
+}
+
+.btn{
+background-color : white;
+ width : 800px;
+ border-radius : 35px;
+ margin : 20px;
+ padding-top : 50px;
+ padding-bottom : 50px;
+}
+
+
+#allbox{
+width : 1280px;
+}
+
+#collapseExample{
+width : 100%;
+}
+
+
+.fileinput input{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.fileinput label {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #999999;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.fileinput input[type="file"] { /*파일 적용 삭제*/
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+#rereplyview{
+    background-color: lightgrey;
+}
+
+#change{
+    border: none;
+}
+
+.replyview1 a{
+    text-decoration: none;
+    color : black;
+}
+
+
+.replyview1 button{
+    font-size: 13px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn2call{
+    margin-left : 80%;
+}
+
+.btn2{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.btn3{
+    margin-top : 10px;
+    width: 40px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding : 5px;
+}
+.rereplyconinput{
+    width: 100%;
+}
+
+.replyviewmain{
+    width: 820px;
+    padding : 15px;
+}
+
+.rerecontentdiv{
+    background-color: #eeeeee;
+    margin-left: 20px;
+    padding : 10px;
+}
+
+.rerecontentdiv button{
+    background-color : #eeeeee;
+    margin-left: 80%;
+    width : 100px;
+}
+
+.chkreply{
+    margin-left : 80%;
+    font-size : 13px;
+}
+
+#replyupdateform button{
+    font-size: 13px;
+    background-color : white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#replyupdateform a{
+    text-decoration: none;
+    color: black;
+}
+
+#replyupdateform textarea{
+    margin-left: 10%;
+    width: 700px;
+    height: 150px;
+}
+
+.delbackbtn{
+    margin-left: 80%;
+}
+
+.updatebtnchk{
+    margin-left: 80%;
+    padding : 10px;
+    font-size : 17px;
+}
+
+#rcontent{
+   width : 100%;
+}

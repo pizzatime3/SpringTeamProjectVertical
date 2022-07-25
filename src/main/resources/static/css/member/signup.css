@@ -1,0 +1,130 @@
+
+#title{
+    text-align: center;
+    margin-top: 30px;
+}
+.totalbox{
+    margin: auto;
+    width: 600px;
+    height: 10px;
+    border: 1px solid #e9e9e9;
+    background-color: #e9e9e9;
+}
+#redbox{
+    width: 200px;
+    height: 8px;
+    background-color: #a3cca2;
+}
+#company{
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+    height: 100px;
+
+}
+.title2{
+    text-align: center;
+    margin-top: 30px;
+    font-weight : bold;
+    margin-bottom: 20px;
+}
+#memail, #memailaddress{
+    border: 1px solid #e9e9e9;
+    width: 200px;
+    height: 50px;
+}
+#emailstep{
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    margin-top: 30px;
+}
+#commentbox a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+#commentbox{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 90px;
+}
+#btn1{
+    color: white;
+    background-color: #a3cca2;
+    border: none;
+    width: 420px;
+    height: 50px;
+}
+#step2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+}
+#redbox2{
+    width: 400px;
+    height: 8px;
+    background-color: #a3cca2;
+}
+#randomnum{
+    border: 1px solid #e9e9e9;
+    width: 420px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#btn2{
+    color: white;
+    background-color: #a3cca2;
+    border: none;
+    width: 420px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+#guidement{
+    color: red;
+    text-align: left;
+    margin-left: 90px;
+}
+#pwinput{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+}
+#redbox3{
+    width: 600px;
+    height: 8px;
+    background-color: #a3cca2;
+}
+#mpassword, #mpassword2{
+    border: 1px solid #e9e9e9;
+    width: 420px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#signupbtn{
+    color: white;
+    background-color: #a3cca2;
+    border: none;
+    width: 420px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------- 회사목록 출력 구역 ---------------------------- */
+
+#companybox{
+    width: 300px;
+    height: 100px;
+    padding-left: 90px;
+}
+#comname{
+    margin-top: 30px;
+}
+#companybox img{
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+}
+

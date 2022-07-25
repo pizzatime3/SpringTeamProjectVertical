@@ -1,0 +1,117 @@
+#a{
+    text-align: center;
+    font-weight : bold;
+    font-size : 30px;
+}
+#b{
+    text-align: center;
+    font-weight : bold;
+    font-size : 18px;
+}
+
+#btnreviewwritethis{
+    text-decoration: none;
+}
+
+
+/*/////////////////////////검색창//////////////////////*/
+#search_corp{
+        background-color: white;	 /*배경색*#efefef;*/
+		border: 1px solid black; 			/* 테두리 없음*/
+		border-radius:	 25px; 		/* 테두리 모서리 곡선 */
+		padding: 10px;	/* 안쪽 여백 */
+		width: 65%;      /*검색창너비*/
+		text-indent: 2em;/*들여쓰기*/
+		margin-left:30px;
+}
+
+/*//////////////////////검색창 END///////////////////*/
+
+/*//////////////////////검색아이콘//////////////////////*/
+.fa-search {
+    position: relative;
+    left: 63px;
+    margin: 0;
+}
+/*//////////////////////검색아이콘END//////////////////////*/
+input::placeholder { text-indent: 2em; color:#BBC0C5; }/*placeholder 들여쓰기*/
+
+
+
+.addcompany{
+    text-align: center;
+    color: black;
+    margin-top:35px;
+}
+
+#bg{
+    background-image: url("/img/review-bg2.png");
+    margin-top:70px;
+}
+.memo{
+    color:#94989e;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing:-1px;
+}
+
+#btnreviewwritethis{
+    background-color:#37acc9;
+    padding:15px 90px;
+    margin-top:20px;
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    font-size: 14px;
+    border:0;
+    outline:0;
+}
+
+.search_li{
+     list-style:none;
+ }
+
+ .search_li:hover{
+    background-color: #eeeeee;
+ }
+.search_atag:hover{
+    color : black;
+ }
+
+.search_atag{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    margin-top: 50px;
+}
+
+#reviewtable{
+    width: 26%;      /*검색창너비*/
+    height:200px;
+    margin-left : 60px;
+    overflow:auto;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    background-color:#ffffff;
+    border : 1px solid #eeeeee;
+    border-radius : 20px;
+    padding : 10px;
+
+}
+
+#search_corp{
+    width: 85%;
+}
+#reviewtable::-webkit-scrollbar{width: 16px;}
+    ::-webkit-scrollbar-track {background-color:#f1f1f1;}
+    ::-webkit-scrollbar-thumb {background-color:#8c8c8c;border-radius: 40px;}
+    ::-webkit-scrollbar-thumb:hover {background: #555;}
+
+
+
+
+
+
+
+

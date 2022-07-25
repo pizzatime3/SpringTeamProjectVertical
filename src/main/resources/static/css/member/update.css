@@ -1,0 +1,35 @@
+
+#title{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#titleborder{
+    border-bottom: 1px solid #BDBDBD;
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#updatebox{
+    margin-top: 30px;
+}
+#mname, #mcom{
+    width: 500px;
+    margin: 0 auto;
+    margin-left: 10px;
+}
+#mnamecheck{
+    margin-left: 10px;
+}
+#backbtn{
+    margin-left: 10px;
+    background-color: #a3cca2;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 10px;
+}
+#backbtn a{
+    text-decoration: none;
+    color: white;
+}

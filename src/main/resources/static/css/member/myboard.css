@@ -1,0 +1,45 @@
+
+#title{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+#titleborder{
+    border-bottom: 1px solid #BDBDBD;
+    width: 950px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#myboard{
+    width: 800px;
+    margin: 0 auto;
+    color: #BDBDBD;
+}
+
+#contentbox{
+    width: 500px;
+    height: 150px;
+    border: 1px solid #BDBDBD;
+    padding-left: 10px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+#nocontentbox{
+    margin-top: 150px;
+}
+#iconbox{
+    padding-left: 70px;
+}
+#backbtn{
+    background-color: #a3cca2;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+
+}
+#backbtn a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,149 @@
+
+/* ------------------ 게시판 구역 ------------------ */
+#boardbox a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------ 토픽베스트 게시판 관련 구역 ------------------ */
+#bestbox{
+    position: relative;
+    margin-top: 20px;
+}
+#bestcate{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+#titleborder2{
+    border-bottom: 1px solid #BDBDBD;
+    width : 1000px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#space2{
+    position: absolute;
+    font-size: 14px;
+    top: 3px;
+    right: 80px;
+}
+#topiclist{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 40px;
+    padding-top: 10px;
+    text-align: left;
+}
+#topiccategory{
+    width: 90px;
+    height: 30px;
+    color: #BDBDBD;
+    margin-left: 20px;
+    font-size: 11px; !important;
+}
+#topiccategory span{
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #BDBDBD;
+}
+#likeicon, #replyicon{
+    color: #BDBDBD;
+    text-align: right;
+}
+#likeicon i, #replyicon i{
+    margin-right: 5px;
+}
+
+/* ------------------ 검색창 관련 구역 ------------------ */
+#searchbox{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#searchbtn{
+    border: none;
+}
+#searchinput{
+    width: 80%;
+    height: 50px;
+    margin-left: 10px;
+    padding: 10px;	/* 안쪽 여백 */
+    border-radius: 20px;
+    border: 1px solid #BDBDBD;
+
+}
+
+#searchinput button{
+    border: 0;
+    background: transparent;
+}
+#searchinput1{
+    width: 80%;
+    border: 0;
+    margin-left: 50px;
+
+}
+
+
+/* ------------------ 광고 배너 관련 구역 ------------------ */
+#banner{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#bannerimg{
+    width: 250px;
+    height : 80px;
+}
+
+/* ------------------ 카테고리별 게시판 구역 ------------------ */
+#boardlist{
+    margin-top: 40px;
+}
+.titleborder{
+    border-bottom: 1px solid #BDBDBD;
+    width : 450px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.space{
+    position: absolute;
+    left: 400px;
+    font-size: 14px;
+}
+.categoryboardbox{
+    position: relative;
+    width: 350px;
+    margin-bottom: 40px;
+}
+.categoryboardbox span{
+    margin-left: 10px;
+    font-size: 18px;
+}
+#categoryboardlist{
+    font-size: 13px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    line-height: 40px;
+}
+#categoryboardlist i{
+    margin-right: 10px;
+}
+.bviewcount{
+    color: gray;
+}
+/* ------------------ 회사목록 구역 ------------------ */
+#companylist{
+    line-height: 30px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+

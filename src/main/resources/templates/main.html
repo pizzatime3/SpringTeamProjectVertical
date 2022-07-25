@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!-- 사용자 css -->
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+<body>
+    <div th:replace="header.html::header"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10" id="boardbox"> <!-- 게시판 부분 -->
+                <div class="col-md-10" id="searchbox"> <!-- 검색창 -->
+
+                    <div id="searchinput">
+                        <a><button id="search" type="button"><i class="fas fa-search"></i></button></a><input type="text" placeholder="관심있는 내용을 검색해보세요!" id="searchinput1" th:value="${searchinput}">
+                    </div>
+                </div>
+                <div id="bestbox">
+                    <span id="bestcate">토픽베스트</span>
+                    <a id="space2" href="/board/list/2"> 더보기 > </a>
+                    <div id="titleborder2"></div>
+                    <div id="topiclist" class="row"></div>
+                </div>
+                <div id="boardlist"></div>
+            </div>
+            <div class="col-md-2"> <!-- 광고배너/회사목록 -->
+                <div id="banner"> <!-- 광고배너 -->
+                    <img src="/img/main-배너.png" id="bannerimg">
+                </div>
+                <div> <!-- 인기 회사 순위 -->
+                    회사목록
+                    <div id="companylist">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div th:replace="footer.html::footer"></div>
+
+<!-- 사용자정의 js -->
+<script src="/js/main.js"></script>
+</body>
+</html>

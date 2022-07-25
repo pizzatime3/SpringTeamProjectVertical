@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+<!-- 사용자 css -->
+<link rel="stylesheet" href="/css/member/update.css">
+</head>
+<body>
+
+    <div th:replace="header.html::header"></div>
+
+    <h3 id="title">내 정보 수정하기</h3>
+    <div id="titleborder"></div>
+
+    <div class="container" id="updatebox">
+        <div class="form-floating mb-2">
+            <input type="text" name="mname" id="mname" class="form-control rounded-4" maxlength="10">
+            <label for="mname">닉네임</label>
+            <span id="mnamecheck"></span>
+        </div>
+
+        <div class="form-floating mb-2">
+            <input type="text" name="mcom" id="mcom" class="form-control rounded-4" readonly>
+            <label for="mcom">회사명</label>
+        </div>
+
+        <button id="backbtn"><a href="/member/info">뒤로가기</a></button>
+
+    </div>
+
+<!-- 사용자정의 js -->
+<script src="/js/member/update.js"></script>
+
+</body>
+</html>

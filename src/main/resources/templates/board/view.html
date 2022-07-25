@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 사용자 정의 css -->
+    <link rel="stylesheet" href="/css/view.css">
+
+</head>
+<body>
+<div th:replace="header.html::header"></div>
+<div class="container" id="allbox">
+
+
+
+
+
+    <!-------------------------------------개별 게시물 출력 구역-------------------------------------------->
+
+        <div id = "boardview" class="mainbox" style="white-space:pre;">
+
+
+        </div>
+
+
+    <!-------------------------------------댓글 쓰기 구역-------------------------------------------->
+
+    <div class="container" id="mainbox">
+
+        <div class="row">
+        <div class="col-md-2"></div>
+
+            <div class="col-md-8">
+                <h5><b>댓글</b></h5>
+        <p>
+            <button class="btn" style="border: 1px solid grey;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="bi bi-camera-fill"></i> 댓글을 남겨주세요!
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+
+                <form id="saveform">
+                            <textarea class="replywrite" name="rcontent"></textarea>
+
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="fileinput">
+                                <label for="r_img">첨부파일</label>
+                                <input class="saveforminput" type="file" multiple="multiple" name="r_img" id="r_img">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                        <button class="replywritebtn" type="button" onclick="reply_save()" style="width : 70px;">쓰기</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+            </div>
+
+        <div class="col-md-2"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-------------------------------------->
+
+
+<div class="container " id="replyallbox" >
+<div class="row">
+<div class="col-md-2"></div>
+
+    <div class="col-md-8">
+        <!-------------------------------------댓글 출력 구역-------------------------------------------->
+        <div class="replyview1" id="replyview" style="white-space:pre;"></div>
+        <!----------------------------------- 대댓글 출력 구역 -------------------------------------------->
+        <div id="rereplyview"></div>
+    </div>
+
+<div class="col-md-2"></div>
+</div>
+</div>
+
+
+<!-------------------------------------->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">댓글 수정하기</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form id="updateform" style="font-size:15px;">
+                    <div>수정하실 댓글 내용을 입력해주세요.</div>
+                    <textarea type="text" name="rcontent" id="rcontent"> </textarea>
+                    <input id="rno" type="hidden" th:value='${rno}' name="rno">
+                    <div id="imgbox"></div>
+                    <div class="fileinput">
+                        <div>수정하실 첨부파일을 선택 해주세요.</div>
+                        <label for="r_img">첨부파일</label>
+                        <input class="saveforminput" type="file" multiple="multiple" name="r_img" id="r_img_reply">
+                    </div>
+                    <div id="replyimgbox">
+                        <!-- 이미지 출력 -->
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button style="width:50%; border:1px solid grey;" type="button" class="btn" data-bs-dismiss="modal">수정 취소</button>
+                <button style="width:50%; border:1px solid grey;" class="btn updatebtnchk" type="submit" onclick="reply_update()">수정 완료</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+<br><br>
+
+<div th:replace="footer.html::footer"></div>
+
+    <script src="/js/board/view.js"></script>
+</body>
+</html>
+
+

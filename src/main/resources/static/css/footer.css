@@ -1,0 +1,21 @@
+#menus{float : left; text-align: left; margin-top:20px;}
+		#menus li{
+		    display: inline;
+		    list-style-type: none;
+		    color:#94969b;
+		    font-size:14px;
+		    text-align:left;
+		}
+		.btnfooter{
+                background-color:#f2f2f3;
+                margin-top:30px;
+                margin-left:15px;
+                word-spacing:2px;
+                padding:10px 20px;
+                border-radius: 20px;
+                color:black;
+                font-size: 12px;
+                border:0;
+                outline:0;
+        }
+		.afooter{ text-decoration: none; color:#94969b;font-size:14px; font-weight:bold;}

@@ -1,0 +1,82 @@
+ .card-body ul{
+  list-style:none;
+  display : grid;
+  grid-template-columns: repeat(2,1fr);
+  }
+  .a{
+      display:inline-block;
+      color:#94969b;
+      width: 110px;
+    }
+    .card-body li{
+      margin-top:10px;
+    }
+    .companyname1{
+      margin-top:25px; margin-left:32px;
+      font-size:22px;
+      font-weight: bold;
+    }
+    .companyname2{
+      margin-top:25px;
+      font-size:22px;
+      font-weight: bold;
+    }
+    .companyname3{
+      margin-top:20px;
+      font-size:16px;
+      font-weight: bold;
+    }
+    #bg{
+      background-image: url("/img/review-bg3.jpg");
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      filter: brightness(40%);
+    }
+    #companyimg{
+      position: relative;  bottom: 30px;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+    }
+    #companyimg img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    #btnreviewwritethis{
+      background-color:#37acc9;
+      padding:15px 90px;
+      margin-top:20px;
+      border-radius: 5px;
+      color:white;
+      font-weight: bold;
+      font-size: 14px;
+      border:0;
+      outline:0;
+      float:right;
+    }
+    #thumbupbtn{
+      background-color:#ffffff;
+      border:1px solid #37acc9;
+      border-radius: 20px;
+      margin-left:15px;
+      padding:5px 10px;
+    }
+    #thumbdownbtn{
+      background-color:#ffffff;
+      border:1px solid #fb5757;
+      border-radius: 20px;
+      margin-left:7px;
+      padding:5px 10px;
+    }
+    .tabmenu{
+            text-decoration: none;
+            color: black;
+            font-size:20px;
+            font-weight:bold;
+            margin: 0px 20px;
+        }

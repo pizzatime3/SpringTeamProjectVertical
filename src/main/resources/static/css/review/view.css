@@ -1,0 +1,731 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+a{
+    text-decoration: none;
+}
+#detail{
+  list-style:none;
+  display : grid;
+  grid-template-columns: repeat(2,1fr);
+  }
+  .a{
+      display:inline-block;
+      color:#94969b;
+      width: 110px;
+    }
+    .details{
+      margin-top:10px;
+    }
+    .companyname1{
+      padding:0;font-size: 26px;
+    }
+    .companyname2{
+      margin-top:25px;
+      font-size:22px;
+      font-weight: bold;
+    }
+    .companyname3{
+      margin-top:20px;
+      font-size:16px;
+      font-weight: bold;
+    }
+    #bg{
+      background-image: url("/img/review-bg3.jpg");
+      overflow: hidden;
+      position: relative;
+      background-size: cover;
+      filter: brightness(40%);
+    }
+    #companyimg{
+      position: relative;  bottom: 30px;
+      width: 120px;
+      height: 120px;
+      overflow: hidden;
+    }
+    #companyimg img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    #btnreviewwritethis{
+      background-color:#a3cca2;
+      padding:15px 90px;
+      margin-top:20px;
+      border-radius: 5px;
+      color:white;
+      font-weight: bold;
+      font-size: 14px;
+      border:0;
+      outline:0;
+      float:right;
+        text-decoration: none;
+    }
+    #thumbupbtn{
+      background-color:#ffffff;
+      border:1px solid #37acc9;
+      border-radius: 20px;
+      margin-left:15px;
+      padding:5px 10px;
+    }
+    #thumbdownbtn{
+      background-color:#ffffff;
+      border:1px solid #fb5757;
+      border-radius: 20px;
+      margin-left:7px;
+      padding:5px 10px;
+    }
+    .tabmenu{
+        text-decoration: none;
+        color: black;
+        font-size:20px;
+        font-weight:bold;
+        margin: 0px 20px;
+    }
+button{
+    overflow: visible;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.review_tag{
+    margin-bottom: -25px;
+    padding: 40px 0 0 124px;
+    position: relative;
+    z-index: 1;
+}
+
+.review_item_inner{
+    padding: 32px 0 30px 124px;
+    position: relative;
+}
+
+.review_item .review_tag .tag_pick{
+    display: inline-block;
+    height: 21px;
+    padding: 0 8px;
+    background-color: #94b0df;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 21px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.review_item .review_tag .exp{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.review_item .review_tag .tag_pick .exp .btn_info{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+}
+
+.review_item .review_tag .exp .btn_info:before{
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -166px -10px;
+    content: "";
+
+}
+
+.blind{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 100px;
+    white-space: nowrap;
+}
+
+#review_card, #introduce_card, #board_card, #news_card{
+    padding-bottom: 0;
+    padding: 37px 40px 30px;
+}
+
+#news_card a{
+    text-decoration: none;
+}
+
+
+
+
+.review_item_inner .rating{
+    position: absolute;
+    top: 34px;
+    left: 0;
+}
+
+.review_item_inner .rating strong{
+    display: block;
+    padding-bottom: 6px;
+    font-size: 18px;
+}
+
+.review_item_inner .one_line{
+    padding-right: 30px;
+    font-size: 18px;
+    margin-top: 1px;
+    font-weight: 700;
+    line-height: 1.38em;
+    word-break: break-word;
+}
+.review_item_inner .auth{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.review_item_inner .paragraph{
+    max-height: 430px;
+    overflow: hidden;
+    position: relative;
+    max-height: 530px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.review_item_inner .paragraph strong{
+    display: block;
+    padding: 12px 0 4px;
+    font-weight: 700;
+}
+
+.review_item_inner .paragraph span{
+    line-height: 1.58em;
+}
+
+.review_item_inner .fnc{
+    position: relative;
+    margin-top: 20px;
+}
+
+.review_item_inner .fnc .btn_help{
+    margin-top: 4px;
+    display: inline-block;
+    height: 30px;
+    padding: 0 12px;
+    border: 1px solid #dfe1e4;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+.review_item_inner .fnc .btn_help:before{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -2px 4px 2px 0;
+    vertical-align: middle;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -374px -10px;
+    content: "";
+}
+
+.review_item_inner .fnc .share{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.review_item_inner .fnc .share [class^=btn_]{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+    background-color: #bbc0c5;
+    border-radius: 50%;
+}
+
+.review_item_inner .fnc .share [class^=btn_]:before{
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 8px);
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: "";
+}
+
+.review_item_inner .fnc .share .btn_fb:before{
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -608px -10px;
+}
+
+.review_item_inner .fnc .share .btn_tw:before{
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -634px -10px;
+}
+
+.review_item_inner .fnc .share .btn_url:before{
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -660px -10px;
+}
+
+.review_all .rating{
+    margin-left: 32px;
+    margin-top: -8px;
+}
+
+.review_tag:before{
+    position: absolute;
+    top: 0;
+    left: -40px;
+    right: -40px;
+    border-top: 1px solid #eff1f5;
+    content: '';
+}
+
+.rating input {
+    display:none;
+}
+
+.rating span{
+    font-size: 18px;
+    margin-left: -10px;
+}
+
+.popover-body #popover-body .rating_wp span{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: -10px;
+}
+
+
+
+.rating label{
+    font-size: 20px;
+    color:#ccc;
+    cursor:pointer;
+}
+
+.popover-body #popover-body .rating_wp label{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.rating :checked ~ label {
+    color:#fc0;
+}
+
+/*.rating label:hover,*/
+/*.rating label:hover ~ label {*/
+/*    color:#fc0;*/
+/*}*/
+
+.rating .star{
+    display: inline-block;
+    margin-bottom: -1px;
+    text-align: left;
+}
+
+.popover-body #popover-body .rating_wp{
+
+}
+
+.popover-body #popover-body .rating_wp #career_star_wp, #balance_star_wp, #salary_star_wp, #culture_star_wp, #management_star_wp{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 12px;
+}
+.rating .star span {
+    color: #cccccc;
+}
+
+.popover-body #popover-body .rating_wp .rating_item{
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 12px;
+    color: #94969b;
+    line-height: 16px;
+    vertical-align: top;
+}
+
+.rating #num{
+    display: block;
+    font-weight: bold;
+    margin-top: 6px;
+    padding-left: 2px;
+}
+
+.more{
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 40px;
+    border-top: 1px solid #eff1f5;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+}
+
+.more:after{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-union.png) no-repeat;
+    background-size: 600px 900px;
+    background-position: -88px -87px;
+    vertical-align: middle;
+    content: "";
+}
+
+.more strong{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.rating #rate_popover{
+    width: 18px;
+    height: 18px;
+    padding: 1px;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+}
+
+.rating #rate_popover:before{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 768px 1024px;
+    background-position: -270px -10px;
+    color: transparent;
+    content: "";
+}
+
+#PopoverContent{
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(-118px, 17px, 0px);
+}
+
+#popover-body{
+    min-width: 251px;
+    padding: 19px 10px 10px 20px;
+    box-sizing: border-box;
+}
+
+.popover-body{
+    min-width: 251px;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.rating_overall{
+    padding: 25px 0 25px;
+}
+
+.rating_overall .rating_stars{
+    width: 166px;
+    padding-right: 0;
+    display: inline-block;
+    /*width: 50%; */
+    /*padding-right: 40px;*/
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+
+.rating_overall .rating_start .rating_no{
+    padding-bottom: 5px;
+}
+
+.rating_overall .rating_stars .rating_no .rate{
+    display: block;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+.rating_overall .rating_stars .rating_no .rating{
+    margin-left: 10px;
+    margin-top: -10px;
+    vertical-align: top;
+}
+
+.rating_overall .rating_stars .rating_no .rating label{
+    font-size: 27px;
+}
+
+.rating_overall .rating_stars .rating_no .count{
+    margin: -4px 0 0;
+    font-size: 14px;
+    display: inline-block;
+    color: #94969b;
+    vertical-align: top;
+    font-style: normal;
+}
+
+.rating_overall .rating_cate{
+    width: calc(100% - 180px);
+    /*padding-top: 0;*/
+    border-top: 0;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    border-top: 0;
+    border-left: 1px solid #eff1f5;
+    box-sizing: border-box;
+}
+
+.rating_overall .rating_cate ul{
+    font-size: 0;
+    padding: 13px 0 0;
+}
+
+.rating_overall .rating_cate ul li{
+    display: inline-block;
+    width: 255px;
+    padding: 6px 0 7px;
+    font-size: 16px;
+    margin-top: 0px;
+
+}
+
+.rating_overall .rating_cate ul li .star{
+    font-weight: 700;
+}
+
+.rating_overall .rating_cate ul li .star:after{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -1px 0 1px 7px;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 491.52px 655.36px;
+    background-position: -128px -157.44px;
+    vertical-align: middle;
+    content: '';
+}
+
+.rating_overall .rating_cate ul li .desc{
+    margin-left: 8px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+
+
+/*///////////////////게시글css////////////////////*/
+#viewboardjs{
+  display:inline-block;
+}
+.viewboardjsli{
+list-style:none;
+display:inline-block;
+}
+#viewboardtitle{
+list-style:none;
+font-size:17px;
+font-weight:bold;
+margin-bottom:10px;
+}
+#viewboardcontent{
+list-style:none;
+margin-bottom:15px;
+font-size:13px;
+color:#94969b;
+}
+/*///////////////////게시글css////////////////////*/
+
+/*///////////////////뉴스css////////////////////*/
+#news{
+
+}
+#press{
+
+}
+.info press{
+text-decoration: none;
+}
+.newsli{
+list-style:none;
+
+}
+#newscontent{
+font-size:13px;
+
+}
+
+/*///////////////////뉴스css////////////////////*/
+
+#news_card h2{
+    padding: 10px 0;
+    line-height: 1.33em;
+    margin-bottom: 0;
+}
+
+#news_card #viewnews{
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+#news_card #viewnews .article{
+    position: relative;
+    display: block;
+    padding: 20px 0 19px;
+    border-top: 1px solid #eff1f5;
+}
+
+#news_card #viewnews .article .companyinfo{
+    display: flex;
+}
+
+#news_card #viewnews .article .companyinfo .img{
+    flex: 0 1 auto;
+    width: 40px;
+    height: 40px;
+    background: url(https://d2u3dcdbebyaiu.cloudfront.net/img/www/sp-cmp.png?time=oct2020) no-repeat;
+    background-size: 276.48px 368.64px;
+    background-position: -72px -42.48px;
+}
+
+#news_card #viewnews .article .companyinfo .img img{
+    width: 40px;
+    height: 40px;
+}
+
+#news_card #viewnews .article .companyinfo .company_name{
+    padding-left: 21px;
+}
+
+#news_card #viewnews .article .companyinfo .company_name strong{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.31em;
+}
+#news_card #viewnews .article .companyinfo .company_name .info.press{
+    font-size: 12px;
+    font-weight: 400;
+    color: #94969b;
+}
+
+#news_card #viewnews .article .companyinfo .company_name .info.press .thumb_box img{
+    margin-right: 13px;
+}
+
+#news_card #viewnews .article .summary{
+    font-size: 14px;
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 1.31em;
+    color: #222;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+}
+
+#news_card #viewnews .article .link_area{
+    margin: 16px 0px 0;
+    border: 1px solid #eff1f5;
+    overflow: hidden;
+}
+
+#news_card #viewnews .article .link_area:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+#news_card #viewnews .article .link_area .fixed{
+    float: left;
+    width: 100px;
+    height: 100px;
+    font-size: 0;
+}
+
+#news_card #viewnews .article .link_area .fixed a{
+    display: block;
+    height: 100%;
+}
+
+#news_card #viewnews .article .link_area .fixed img{
+    width: 100%;
+    height: 100%;
+}
+
+#news_card #viewnews .article .link_area .fixed+.desc{
+    padding-left: 116px;
+}
+
+#news_card #viewnews .article .link_area .desc{
+    position: relative;
+    min-height: 100px;
+    padding: 15px 16px;
+    box-sizing: border-box;
+}
+
+#news_card #viewnews .article .link_area .desc p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.36em;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    word-break: break-word;
+    -webkit-line-clamp: 2;
+}
+
+#news_card #viewnews .article .link_area .desc p a{
+    text-decoration: none;
+    color: #222;
+    cursor: pointer;
+}
+
+#news_card #viewnews .article .link_area .desc .from{
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+#news_card #viewnews .article .link_area .desc .from .info.press{
+    bottom: 15px;
+    font-size: 14px;
+    line-height: 16px;
+}
+#news_card #viewnews .article .link_area .desc .from .info.press .thumb_box img{
+    margin-right: 13px;
+}
+
+
+
+
+

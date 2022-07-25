@@ -1,0 +1,48 @@
+.aheader{
+text-decoration:none;
+font-weight: bold;
+font-size:20px;
+color:black;
+
+width: 100%;
+margin : 0 auto;
+}
+
+#mainlogo{
+    width: 70%;
+}
+
+#logobox{
+margin-left: 50px;
+}
+
+.aheader1{
+font-weight: bold;
+border : 1px solid #a3cca2;
+background-color : #a3cca2;
+width: 80px;
+font-size: 15px;
+padding:5px;
+}
+
+.aheader2{
+font-weight: bold;
+border : 1px solid grey;
+background-color : white;
+width: 80px;
+font-size: 15px;
+padding:5px;
+}
+
+.aheader3{
+font-weight: bold;
+border : 1px solid grey;
+background-color : white;
+width: 80px;
+font-size: 15px;
+padding:5px;
+}
+
+.btnbox a{
+    text-decoration: none
+}
